@@ -43,7 +43,7 @@ class Vesseltracks extends Model {
         if (is_array($data['mmsi'])) {
             $mmsi = implode(",", $data['mmsi']);
         } else {
-            $mmsi = [$data['mmsi'])];
+            $mmsi = [$data['mmsi']];
         }
 
         $sql = "SELECT * 

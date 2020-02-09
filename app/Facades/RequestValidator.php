@@ -61,11 +61,9 @@ class RequestValidator extends ValidatorAbstract {
             $ips[$ip]['count'] = +1;
         }
 
-        if ($latestPost->created_at->diffInSeconds(Carbon\Carbon::now()) > (30 * 60 * 60)) {
-            $check = false;
-        }
-
-        if ( $ips[$ip]['count'] > 10) {
+        if ($latestPost->created_at->diffInSeconds(Carbon\Carbon::now()) > (30 * 60 * 60)
+           && $ips[$ip]['count'] > 10
+        ) {
             $check = false;
         }
 
