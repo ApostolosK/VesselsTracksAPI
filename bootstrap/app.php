@@ -68,7 +68,7 @@ $app->middleware([
 ]);
 
 $app->middleware([
-    App\Http\Middleware\Coordinates::class
+    App\Http\Middleware\Vesselstracks::class
 ]);
 
 /*
@@ -82,7 +82,9 @@ $app->middleware([
 |
 */
 
-$app->register(Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class)
+/* Add Bugsnag to report errors */
+ 
+$app->register(Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class);
 $app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);

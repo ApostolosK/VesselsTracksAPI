@@ -19,3 +19,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ### License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+### Application
+
+The Application has two functionalities, to add data to DB, and retrieve data according to the specs
+
+### Notes
+
+I was make a try to create a docker file, in order the application can run to any enviroment, but I was afraid the time

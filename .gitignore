@@ -5,3 +5,4 @@ Homestead.json
 Homestead.yaml
 composer.phar
 composer.lock
+composer-setup.php
